@@ -142,9 +142,9 @@
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.Location = new Point(6, 9);
             label1.Name = "label1";
-            label1.Size = new Size(507, 20);
+            label1.Size = new Size(471, 20);
             label1.TabIndex = 1;
-            label1.Text = "Select folders to scan:    (Right-click to show menu to select subfolders)";
+            label1.Text = "Select folders to scan:    (Right-click on folder to select subfolders)";
             // 
             // treeView1
             // 
@@ -174,7 +174,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 14F);
-            label7.Location = new Point(6, 11);
+            label7.Location = new Point(3, 3);
             label7.Name = "label7";
             label7.Size = new Size(269, 32);
             label7.TabIndex = 5;
@@ -184,9 +184,9 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F);
-            label6.Location = new Point(6, 43);
+            label6.Location = new Point(6, 34);
             label6.Name = "label6";
-            label6.Size = new Size(434, 80);
+            label6.Size = new Size(618, 80);
             label6.TabIndex = 4;
             label6.Text = resources.GetString("label6.Text");
             // 
@@ -240,12 +240,12 @@
             groupBoxWhatToMatchOn.Controls.Add(checkBoxMatchOnLastModTime);
             groupBoxWhatToMatchOn.Controls.Add(checkBoxMatchOnReceivedTime);
             groupBoxWhatToMatchOn.Controls.Add(checkBoxMatchOnSentOn);
-            groupBoxWhatToMatchOn.Location = new Point(3, 298);
+            groupBoxWhatToMatchOn.Location = new Point(3, 258);
             groupBoxWhatToMatchOn.Name = "groupBoxWhatToMatchOn";
-            groupBoxWhatToMatchOn.Size = new Size(615, 154);
+            groupBoxWhatToMatchOn.Size = new Size(615, 157);
             groupBoxWhatToMatchOn.TabIndex = 3;
             groupBoxWhatToMatchOn.TabStop = false;
-            groupBoxWhatToMatchOn.Text = "Match on what fields?";
+            groupBoxWhatToMatchOn.Text = "What fields would you like messages to be match on?";
             // 
             // checkBoxMatchOnBCC
             // 
@@ -402,10 +402,10 @@
             groupBoxWhatToDoWithEmails.Controls.Add(radioButtonMoveToFolder);
             groupBoxWhatToDoWithEmails.Location = new Point(3, 3);
             groupBoxWhatToDoWithEmails.Name = "groupBoxWhatToDoWithEmails";
-            groupBoxWhatToDoWithEmails.Size = new Size(615, 285);
+            groupBoxWhatToDoWithEmails.Size = new Size(615, 249);
             groupBoxWhatToDoWithEmails.TabIndex = 1;
             groupBoxWhatToDoWithEmails.TabStop = false;
-            groupBoxWhatToDoWithEmails.Text = "Action to take";
+            groupBoxWhatToDoWithEmails.Text = "Action to take on each duplicate?";
             groupBoxWhatToDoWithEmails.UseCompatibleTextRendering = true;
             // 
             // radioButtonLogOnly
@@ -413,28 +413,29 @@
             radioButtonLogOnly.AutoSize = true;
             radioButtonLogOnly.Location = new Point(13, 155);
             radioButtonLogOnly.Name = "radioButtonLogOnly";
-            radioButtonLogOnly.Size = new Size(87, 24);
+            radioButtonLogOnly.Size = new Size(240, 24);
             radioButtonLogOnly.TabIndex = 8;
-            radioButtonLogOnly.Text = "Log only";
+            radioButtonLogOnly.Text = "Log Only (good for testing first)";
             radioButtonLogOnly.UseVisualStyleBackColor = true;
             // 
             // txtSaveEachDupToFilePath
             // 
             txtSaveEachDupToFilePath.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtSaveEachDupToFilePath.Location = new Point(36, 238);
+            txtSaveEachDupToFilePath.Location = new Point(36, 216);
             txtSaveEachDupToFilePath.Name = "txtSaveEachDupToFilePath";
             txtSaveEachDupToFilePath.ReadOnly = true;
-            txtSaveEachDupToFilePath.Size = new Size(565, 27);
+            txtSaveEachDupToFilePath.Size = new Size(573, 27);
             txtSaveEachDupToFilePath.TabIndex = 7;
+            txtSaveEachDupToFilePath.Visible = false;
             // 
             // checkBoxSaveEachDupToFilePath
             // 
             checkBoxSaveEachDupToFilePath.AutoSize = true;
-            checkBoxSaveEachDupToFilePath.Location = new Point(16, 207);
+            checkBoxSaveEachDupToFilePath.Location = new Point(13, 192);
             checkBoxSaveEachDupToFilePath.Name = "checkBoxSaveEachDupToFilePath";
-            checkBoxSaveEachDupToFilePath.Size = new Size(361, 24);
+            checkBoxSaveEachDupToFilePath.Size = new Size(348, 24);
             checkBoxSaveEachDupToFilePath.TabIndex = 5;
-            checkBoxSaveEachDupToFilePath.Text = "Also, save each duplicate to a windows file folder.";
+            checkBoxSaveEachDupToFilePath.Text = "Also, save each duplicate to a file system folder.";
             toolTip1.SetToolTip(checkBoxSaveEachDupToFilePath, "This will save the emails to a file folder.  The directory structure is preserved when saving to files.");
             checkBoxSaveEachDupToFilePath.UseVisualStyleBackColor = true;
             checkBoxSaveEachDupToFilePath.CheckedChanged += checkBoxSaveEachDupToFilePath_CheckedChanged;
@@ -444,9 +445,9 @@
             radioButtonOpenEachInOutlook.AutoSize = true;
             radioButtonOpenEachInOutlook.Location = new Point(13, 95);
             radioButtonOpenEachInOutlook.Name = "radioButtonOpenEachInOutlook";
-            radioButtonOpenEachInOutlook.Size = new Size(528, 24);
+            radioButtonOpenEachInOutlook.Size = new Size(479, 24);
             radioButtonOpenEachInOutlook.TabIndex = 4;
-            radioButtonOpenEachInOutlook.Text = "Open each email in Outlook - action can be taken on each email in Outlook";
+            radioButtonOpenEachInOutlook.Text = "Open each email in Outlook (then you can manually move/delete it)";
             radioButtonOpenEachInOutlook.UseVisualStyleBackColor = true;
             radioButtonOpenEachInOutlook.CheckedChanged += radioButtonActionUpdateGUI_CheckedChanged;
             // 
@@ -510,10 +511,10 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button1.Location = new Point(482, 458);
+            button1.Dock = DockStyle.Bottom;
+            button1.Location = new Point(3, 463);
             button1.Name = "button1";
-            button1.Size = new Size(150, 50);
+            button1.Size = new Size(634, 50);
             button1.TabIndex = 4;
             button1.Text = "I Agree";
             button1.UseVisualStyleBackColor = true;
@@ -525,7 +526,7 @@
             richTextBox1.Location = new Point(10, 0);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ReadOnly = true;
-            richTextBox1.Size = new Size(634, 437);
+            richTextBox1.Size = new Size(624, 448);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 

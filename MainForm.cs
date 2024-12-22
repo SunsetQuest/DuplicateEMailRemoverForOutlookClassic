@@ -730,6 +730,7 @@ namespace DuplicateEMailRemover
             }
 
             checkBoxSaveEachDupToFilePath.Text = "Save each duplicate to " + (filePathToSaveEmails ?? "a file.");
+            txtSaveEachDupToFilePath.Visible = checkBoxSaveEachDupToFilePath.Checked;
         }
 
         private void btnStop_Click(object sender, EventArgs e)

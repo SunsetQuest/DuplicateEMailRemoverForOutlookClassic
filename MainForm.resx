@@ -121,10 +121,11 @@
     <value>True</value>
   </metadata>
   <data name="label6.Text" xml:space="preserve">
-    <value>Drag-and-drop to change the order that messages are scanned.
-The action(such as delete) will be taken as duplicates are found.
-So, if duplicate emails are found in a folder higher in the list and
-one lower in the list it will delete it out of the lower folder.</value>
+    <value>Drag-and-drop the folders to change the order they are scanned. The action, such as delete,
+will be taken as duplicates are found. So, if duplicate email is found in a folder higher in the 
+list and another, lower in the list, it will delete the later. 
+In Summary, move the folders you want duplicates deleted from to the bottom.
+</value>
   </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>203, 17</value>
