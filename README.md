@@ -5,8 +5,14 @@
 
 ## Key Features
 - **Folder Selection**: Users can choose specific folders or mailboxes to scan for duplicates.
+  ![image](https://github.com/user-attachments/assets/8b4a7a81-d3cf-4708-bc0d-e56b139d38b2)
+
 - **Customizable Folder Order**: Adjust the processing order of folders to control where duplicates are removed.
+  ![image](https://github.com/user-attachments/assets/1ad212d6-afc1-49fb-a517-b0a03c722724)
+
 - **Flexible Actions**: Options include deleting, moving, copying, logging, or opening duplicates in Outlook.
+  ![image](https://github.com/user-attachments/assets/7cf698d7-e490-4020-97b8-60a0cfb20e8e)
+
 - **Advanced Matching Options**: Match duplicates based on fields like date, sender, subject, body, and attachments.
 - **Backup Capability**: Save duplicates to a specified Windows file folder for backup.
 - **Compatibility**: Designed for Outlook Classic and does not support the "New Outlook" version.
